@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>DavidFontes</title>
+</head>
+<body>
+    <nav>
+        <h1>DavidFontes</h1>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#aboutme">Sobre mim</a></li>
+            <li><a href="#formation">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header id="home">
+            <h3>Olá, sou o David</h3>
+            <h2>Analista em segurança da informação</h2>
+            <div>
+                <p>Mexendo com terminais desde os 16 anos </p>  
+                <span class="bar">
+            </div>
+        </header>
+
+        <section id="aboutme">
+            <h2>Sobre mim</h2>
+            <!-- Terminal linux falando sobre mim -->
+            <article class="terminal">
+                <aside></aside>
+                <div>
+                    <p><span class="computer">david@ubuntu</span>:<span class="dir">~/aboutme</span>$ cat profile.txt</p>
+                    <div>
+                        <p>Nome: David Fontes</p>
+                        <p>Idade: 18 anos</p>
+                        <p>País: Brasil</p>
+                        <p>Cargo: analista em segurança da informação</p>
+                        <p>Objetivo: Ser melhor que ontem</p>
+                    </div>
+                    <br>
+                    <div>
+                        <p><span class="computer">david@ubuntu</span>:<span class="dir">~/aboutme</span>$ cat note.txt</p>
+                        <p>1 - Apaixonado por desenvolvimento e segurança cibernética</p>
+                        <p>2 - Trabalhando com terminais desde os 16 anos</p>
+                        <p>3 - Sem plano B</p>
+                    </div>
+                    <br>
+                    <p><span class="computer">david@ubuntu</span>:<span class="dir">~/aboutme</span>$ cat mantra.txt</p>
+                    <p>“Você deve entender que existe mais de um caminho para o topo da montanha.”
+                                                         <br>   -Miyamoto Musashi</p>
+    
+                    <br>
+                    <div class="div-terminal">
+                        <p><span class="computer">david@ubuntu</span>:<span class="dir">~/aboutme</span>$
+                        <div class="bar">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="formation">
+            <h2>Formação</h2>
+            <div>
+                <h4>Ensino:</h4>
+                <p>Cursando Análise e Desenvolvimento de Sistemas - 02/2024 - atualmente</p> 
+            </div>
+            <h3>Carreira:</h3>
+            <p>Analista em segurança da informação na ATRI - 02/2024 - atualmente </p>
+            <div>
+                <h4>Idiomas</h4>
+                <p> <img src="./src/assets/icons/eua.png" alt="bandeira do Estados Unidos" width="16px"> Inglês - Intermediário</p>
+                <p> <img src="./src/assets/icons/brazil.png" alt="bandeira do Brasil" width="16px"> Portugues - Nativo</p>
+                <p> <img src="./src/assets/icons/espanha.png" alt="Bandeira da Espanha" width="16px"> Espanhol - Básico</p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <!-- Cartas do portfolio -->
+            <div class="cards">
+                <div class="card">
+                    <h4>DEEP</h4>
+                    <p>O DEEP tem como objetivo melhorar a capacidade das autoridades policiais e dos profissionais jurídicos de solucionar crimes por meio da análise de grandes volumes de dados relacionados a casos criminais. </p>
+                    <a href="https://github.com/institute-atri/deep" target="_blank"> <img src="./src/assets/icons/link-svgrepo-com.svg" width="24px"> github</a>
+                </div>
+                <div class="card">
+                    <h4>WASTRAP</h4>
+                    <p>WASTRAP é uma ferramenta de exploração web focada em aplicação WordPress. </p>
+                    <a href="https://github.com/institute-atri/wastrap" target="_blank"> <img src="./src/assets/icons/link-svgrepo-com.svg" width="24px"> github</a>
+                </div>
+                <div class="card">
+                    <h4>4forward-secure</h4>
+                    <p>Uma pagina onde coloco assuntos de cybersecurity</p>
+                    <a href="https://4forward-secure.github.io/index.html" target="_blank"> <img src="./src/assets/icons/link-svgrepo-com.svg" alt="" width="24px"> link</a>
+                </div>
+            </div>
+        </section>
+        <article id="contact">
+            <h2>Contato</h2>
+            <!--Formulário -->
+            <form action="#submit">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="message">Mensagem</label>
+                    <textarea rows="5" cols="32" id="message"></textarea>
+                </div>
+                <button>enviar</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
