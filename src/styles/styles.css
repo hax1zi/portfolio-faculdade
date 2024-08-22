@@ -60,6 +60,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 8px;
+
+    text-align: center
 }
 
 header h3 {
@@ -101,8 +103,8 @@ header div {
 
 #aboutme .terminal {
     background-color: rgb(6, 0, 16);
-    min-width: 50%;
-    min-height: 50%;
+    width: 95vw;
+    max-width: 850px;
     border-radius: 4px;
     
     font-size: 16pt;
@@ -187,6 +189,7 @@ header div {
 
 #formation p {
     font-size: 14pt;
+    width: 90vw;
 }
 
 /* Estilização do portfolio */
@@ -324,4 +327,37 @@ header div {
 #contact h2 {
     font-size: 24pt;
     font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 828px) {
+    nav ul a {
+        font-size: 12pt;
+    }
+
+    header h2 {
+        font-size: 26pt;
+    }
+}
+
+@media (max-width: 600px) {
+    nav h1 {
+        display: none;
+    }
+    header h3 {
+        font-size: 16pt;
+    }
+    
+    header h2 {
+        font-size: 18pt;
+    }
+    
+    header p {
+        font-size: 14pt;
+    }
 }
